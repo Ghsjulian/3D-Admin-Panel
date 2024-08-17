@@ -28,18 +28,22 @@ const Header = () => {
             <aside ref={sideRef} className="side-bar">
                 <h3>Main Menu</h3>
                 <div className="side-links">
+                 <div className="search">
+                        <input type="text" placeholder="Search..." />
+                        <i className="bx bx-search"></i>
+                    </div>
                     <NavLink className={path == "/" ? "active" : ""} to="/">
                         <i className="bx bx-customize"></i>
                         <span>Dashboard</span>
                     </NavLink>
-                     <NavLink
+                    <NavLink
                         className={path == "/profile" ? "active" : ""}
                         to="/profile"
                     >
                         <i className="bx bx-user-circle"></i>
                         <span>Profile</span>
                     </NavLink>
-                     <NavLink
+                    <NavLink
                         className={path == "/notification" ? "active" : ""}
                         to="/notification"
                     >
@@ -101,10 +105,11 @@ const Header = () => {
             <header>
                 <h3 onClick={goHome}>Admin Dashboard</h3>
                 <div className="links">
-                    <NavLink to="/">
-                        {" "}
+                    <div className="search">
+                        <input type="text" placeholder="Search..." />
                         <i className="bx bx-search"></i>
-                    </NavLink>
+                    </div>
+
                     <NavLink to="/">
                         {" "}
                         <i className="bx bx-bell"></i>

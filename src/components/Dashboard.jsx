@@ -21,6 +21,49 @@ const Dashboard = () => {
                 </div>
                 <div className="col">
                     <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+                {/* Testing */}
+                <div className="col">
+                    <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+                <div className="col">
+                    <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+                <div className="col">
+                    <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+                <div className="col">
+                    <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+            </div>
+            <div className="two-row">
+                <div className="col">
+                    <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+                <div className="col">
+                    <i className="bx bx-customize"></i>
+                    <p>8 Changes</p>
+                    <span> View Customization</span>
+                </div>
+                 <div className="col">
+                    <i className="bx bx-customize"></i>
+                   <p>8 Changes</p> 
+                    <span> View Customization</span>
+                </div>
+                 <div className="col">
+                    <i className="bx bx-customize"></i>
                    <p>8 Changes</p> 
                     <span> View Customization</span>
                 </div>

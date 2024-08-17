@@ -116,6 +116,32 @@ header .links {
     justify-content: space-around;
     align-items: center;
 }
+aside .side-links .search {
+    display: none;
+    justify-content: center;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--link-icon);
+    color: var(--link-icon);
+    border-radius: 12px;
+    margin: 0.7rem 0.3rem;
+}
+
+header .links .search {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--link-icon);
+    color: var(--link-icon);
+    border-radius: 12px;
+}
+.search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
 header .links a {
     color: var(--link-color);
     margin: 0 0.8rem;
@@ -176,8 +202,8 @@ aside h3 {
 }
 main {
     margin-top: 4rem;
-    display: flex;
-    justify-content: center;
+    padding: 1.5rem 0;
+    align-items: center;
     position: relative;
     left: 20%;
     width: 80%;
@@ -188,18 +214,28 @@ section {
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: 98%;
+    width: 95%;
     /* background: var(--white); */
 }
 .dashboard {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
-    gap: 0.7rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
-.dashboard .col {
+.two-row {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard .col,
+.two-row .col {
     height: 100%;
     background: var(--white);
     padding: 0.5rem;
@@ -209,12 +245,14 @@ section {
     flex-direction: column;
     align-items: center;
 }
-.dashboard .col i {
+.dashboard .col i,
+.two-row .col i {
     font-size: 3rem;
     color: var(--call-btn);
     font-weight: 500;
 }
-.dashboard .col span {
+.dashboard .col span,
+.two-row .col span {
     color: var(--link-icon);
     margin: 0.5rem auto;
 }
@@ -254,8 +292,11 @@ section {
         width: 90%;
     }
     section {
-        width: 98%;
+        width: 95%;
         flex-direction: column;
+    }
+    aside .side-links .search {
+        display: none;
     }
 }
 @media (max-width: 768px) {
@@ -317,50 +358,14 @@ section {
     }
     main {
         left: 0;
-        width: 100%;
+        width: 95%;
     }
     section {
         width: 98%;
         flex-direction: column;
     }
-    #hero :nth-child(2) {
-        order: -1;
-    }
-    #about :nth-child(1) {
-        order: -1;
-    }
-    .hero-text h2 {
-        font-size: 1.5rem;
-        margin: 0.5rem 0;
-    }
-    .hero-text h3 {
-        font-size: 1.4rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .hero-text .btn-area {
-        margin: 0.5rem 0;
-    }
-    .btn-area #shop {
-        margin-left: 0;
-    }
-    .hero-text article {
-        width: 100%;
-        max-width: 100%;
-    }
-    .one-section .skills {
-        position: relative;
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
-    }
-    .one-section article {
-        width: 98%;
-        margin: 0.6rem 0;
-        padding: 0.4rem 0;
-    }
-    .projects .project img {
-        width: 100%;
-        height: 350px;
+    aside .side-links .search {
+        display: flex;
     }
 }
 /* @CSS Animation Created */
