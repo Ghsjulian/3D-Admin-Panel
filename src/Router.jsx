@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import NotFound from "./components/404";
+import Users from "./components/Users"
 
 const MyRoutes = [
     {
@@ -17,8 +18,8 @@ const MyRoutes = [
                 element: <Home />
             },
             {
-                path: "about",
-                element: <AboutSection />
+                path: "all-users",
+                element: <Users />
             },
             {
                 path: "contact",
